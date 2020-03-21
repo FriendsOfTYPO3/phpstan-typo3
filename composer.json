@@ -15,5 +15,15 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "FriendsOfTYPO3\\PHPStan\\TYPO3\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FriendsOfTYPO3\\PHPStan\\TYPO3\\Tests\\": "tests/"
+        }
     }
 }
