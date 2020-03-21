@@ -3,5 +3,10 @@
     "description": "TYPO3 rules for PHPStan",
     "type": "phpstan-extension",
     "license": "GPL-2.0-or-later",
-    "require": {}
+    "require": {},
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    }
 }
