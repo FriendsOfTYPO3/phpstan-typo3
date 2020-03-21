@@ -1,0 +1,9 @@
+includes:
+  - vendor/jangregor/phpstan-prophecy/src/extension.neon
+
+parameters:
+  level: max
+
+  paths:
+    - %currentWorkingDirectory%/src/
+    - %currentWorkingDirectory%/tests/
