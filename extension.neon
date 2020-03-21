@@ -3,3 +3,7 @@ services:
     class: FriendsOfTYPO3\PHPStan\TYPO3\Type\GeneralUtilityDynamicReturnTypeExtension
     tags:
       - phpstan.broker.dynamicStaticMethodReturnTypeExtension
+  -
+    class: FriendsOfTYPO3\PHPStan\TYPO3\Type\ContextGetAspectDynamicReturnTypeExtension
+    tags:
+      - phpstan.broker.dynamicMethodReturnTypeExtension
