@@ -1,0 +1,7 @@
+{
+    "name": "friendsoftypo3/phpstan-typo3",
+    "description": "TYPO3 rules for PHPStan",
+    "type": "phpstan-extension",
+    "license": "GPL-2.0-or-later",
+    "require": {}
+}
