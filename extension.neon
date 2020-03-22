@@ -7,3 +7,11 @@ services:
     class: FriendsOfTYPO3\PHPStan\TYPO3\Type\ContextGetAspectDynamicReturnTypeExtension
     tags:
       - phpstan.broker.dynamicMethodReturnTypeExtension
+  -
+    class: FriendsOfTYPO3\PHPStan\TYPO3\Type\ObjectManagerGetDynamicReturnTypeExtension
+    tags:
+      - phpstan.broker.dynamicMethodReturnTypeExtension
+  -
+    class: FriendsOfTYPO3\PHPStan\TYPO3\Type\ObjectManagerInterfaceGetDynamicReturnTypeExtension
+    tags:
+      - phpstan.broker.dynamicMethodReturnTypeExtension
