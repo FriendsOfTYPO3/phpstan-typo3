@@ -1,7 +1,7 @@
 {
     "name": "friendsoftypo3/phpstan-typo3",
-    "description": "TYPO3 rules for PHPStan",
     "type": "phpstan-extension",
+    "description": "TYPO3 rules for PHPStan",
     "license": "GPL-2.0-or-later",
     "require": {
         "php": "^7.2",
@@ -9,16 +9,16 @@
         "typo3/cms-core": "^10.0",
         "typo3/cms-extbase": "^10.0"
     },
-    "config": {
-        "platform": {
-            "php": "7.2"
-        }
-    },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.3",
         "jangregor/phpstan-prophecy": "^0.6.2",
         "phpunit/phpunit": "^8.5",
         "symplify/easy-coding-standard": "^7.2"
+    },
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
     },
     "autoload": {
         "psr-4": {
