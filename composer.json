@@ -15,6 +15,7 @@
         }
     },
     "require-dev": {
+        "ergebnis/composer-normalize": "^2.3",
         "jangregor/phpstan-prophecy": "^0.6.2",
         "phpunit/phpunit": "^8.5",
         "symplify/easy-coding-standard": "^7.2"
