@@ -15,5 +15,5 @@ trim_trailing_whitespace = true
 [*.neon]
 indent_size = 2
 
-[*.yaml]
+[*.{yaml,yml}]
 indent_size = 2
