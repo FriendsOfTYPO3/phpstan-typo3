@@ -1,0 +1,8 @@
+includes:
+  - %currentWorkingDirectory%/extension.neon
+
+parameters:
+  level: max
+
+  paths:
+    - %currentWorkingDirectory%/tests/StaticCodeAnalysis/
