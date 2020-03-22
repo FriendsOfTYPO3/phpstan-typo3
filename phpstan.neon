@@ -6,4 +6,4 @@ parameters:
 
   paths:
     - %currentWorkingDirectory%/src/
-    - %currentWorkingDirectory%/tests/
+    - %currentWorkingDirectory%/tests/Unit/
