@@ -1,5 +1,5 @@
 parameters:
-  autoload_files:
+  bootstrapFiles:
     - phpstan.bootstrap.php
 
 services:
