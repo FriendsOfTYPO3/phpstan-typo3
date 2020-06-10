@@ -42,7 +42,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install locked dependencies with composer"
-        run: "composer install --no-interaction --no-progress --no-suggest"
+        run: "composer install --no-interaction --no-progress --no-suggest --no-plugins"
 
       - name: "Run ergebnis/composer-normalize"
         run: "composer normalize --dry-run"
@@ -88,15 +88,15 @@ jobs:
 
       - name: "Install lowest dependencies with composer"
         if: "matrix.dependencies == 'lowest'"
-        run: "composer update --no-interaction --no-progress --no-suggest --prefer-lowest"
+        run: "composer update --no-interaction --no-progress --no-suggest --no-plugins --prefer-lowest"
 
       - name: "Install locked dependencies with composer"
         if: "matrix.dependencies == 'locked'"
-        run: "composer install --no-interaction --no-progress --no-suggest"
+        run: "composer install --no-interaction --no-progress --no-suggest --no-plugins"
 
       - name: "Install highest dependencies with composer"
         if: "matrix.dependencies == 'highest'"
-        run: "composer update --no-interaction --no-progress --no-suggest"
+        run: "composer update --no-interaction --no-progress --no-suggest --no-plugins"
 
       - name: "Show phpstan/phpstan version"
         run: "vendor/bin/phpstan --version"
@@ -140,15 +140,15 @@ jobs:
 
       - name: "Install lowest dependencies with composer"
         if: "matrix.dependencies == 'lowest'"
-        run: "composer update --no-interaction --no-progress --no-suggest --prefer-lowest"
+        run: "composer update --no-interaction --no-progress --no-suggest --no-plugins --prefer-lowest"
 
       - name: "Install locked dependencies with composer"
         if: "matrix.dependencies == 'locked'"
-        run: "composer install --no-interaction --no-progress --no-suggest"
+        run: "composer install --no-interaction --no-progress --no-suggest --no-plugins"
 
       - name: "Install highest dependencies with composer"
         if: "matrix.dependencies == 'highest'"
-        run: "composer update --no-interaction --no-progress --no-suggest"
+        run: "composer update --no-interaction --no-progress --no-suggest --no-plugins"
 
       - name: "Run tests with phpunit/phpunit"
         run: "vendor/bin/phpunit --configuration=phpunit.xml"
