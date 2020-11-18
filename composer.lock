@@ -3942,12 +3942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/extbase.git",
-                "reference": "75f6a6fb9313e787941ab05b24791bf4453c6419"
+                "reference": "c5ae597497b1954bb5ba305bfd8465eac2164e73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/extbase/zipball/75f6a6fb9313e787941ab05b24791bf4453c6419",
-                "reference": "75f6a6fb9313e787941ab05b24791bf4453c6419",
+                "url": "https://api.github.com/repos/TYPO3-CMS/extbase/zipball/c5ae597497b1954bb5ba305bfd8465eac2164e73",
+                "reference": "c5ae597497b1954bb5ba305bfd8465eac2164e73",
                 "shasum": ""
             },
             "require": {
@@ -3997,7 +3997,7 @@
             ],
             "description": "A framework to build extensions for TYPO3 CMS.",
             "homepage": "https://typo3.org",
-            "time": "2020-06-05T12:25:13+00:00"
+            "time": "2020-11-16T20:28:24+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
@@ -4051,16 +4051,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.9",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be"
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/ba05e165bb4fd1302edf3f0280a149992e8c79be",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
                 "shasum": ""
             },
             "require": {
@@ -4086,7 +4086,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2020-02-03T10:46:43+00:00"
+            "time": "2020-11-16T21:38:14+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -7194,7 +7194,7 @@
                     "type": "github"
                 }
             ],
-            "abandoned": true,
+            "abandoned": "symplify/package-builder",
             "time": "2020-05-15T21:39:16+00:00"
         },
         {
