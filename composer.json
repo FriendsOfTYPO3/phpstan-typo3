@@ -6,8 +6,8 @@
     "require": {
         "php": "^7.2",
         "phpstan/phpstan": "^0.12.44",
-        "typo3/cms-core": "^10.4 || 11.0.*@dev",
-        "typo3/cms-extbase": "^10.4 || 11.0.*@dev"
+        "typo3/cms-core": "^10.4 || 11.*.*@dev",
+        "typo3/cms-extbase": "^10.4 || 11.*.*@dev"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.3",
