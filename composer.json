@@ -5,15 +5,15 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "php": "^7.2 || ^8.0",
-        "phpstan/phpstan": "^0.12.44",
-        "typo3/cms-core": "^10.4 || 11.*.*@dev",
-        "typo3/cms-extbase": "^10.4 || 11.*.*@dev"
+        "phpstan/phpstan": "^0.12.44"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.3",
         "jangregor/phpstan-prophecy": "^0.6.2",
         "phpunit/phpunit": "^8.5",
-        "symplify/easy-coding-standard": "^7.2"
+        "symplify/easy-coding-standard": "^7.2",
+        "typo3/cms-core": "^10.4 || 11.*.*@dev",
+        "typo3/cms-extbase": "^10.4 || 11.*.*@dev"
     },
     "config": {
         "platform": {
