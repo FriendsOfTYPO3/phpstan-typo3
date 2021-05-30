@@ -8,6 +8,8 @@ This extension provides the following features:
 * Provides correct return type for `\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance()`.
 * Provides correct return type for `\TYPO3\CMS\Extbase\Object\ObjectManagerInterface->get()`.
 * Provides correct return type for `\TYPO3\CMS\Extbase\Object\ObjectManager->get()`.
+* Provides correct return type for `\TYPO3\CMS\Extbase\Persistence\Generic\Query->execute()`.
+* Provides correct return type for `\TYPO3\CMS\Extbase\Persistence\QueryInterface->execute()`.
 
 <details>
   <summary>Details on GeneralUtility::makeInstance()</summary>
