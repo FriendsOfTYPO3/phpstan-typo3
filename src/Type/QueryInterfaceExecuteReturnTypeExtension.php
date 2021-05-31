@@ -1,8 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
 namespace FriendsOfTYPO3\PHPStan\TYPO3\Type;
-
 
 use PhpParser\Node\Expr\ClassConstFetch;
 use PhpParser\Node\Expr\MethodCall;
