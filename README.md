@@ -54,6 +54,6 @@ includes:
 
 Well, this package has one specific purpose. It's made to help making the TYPO3 core phpstan max level compatible. To achieve this, the core team needs to be able to have its own extension which can be quickly adjusted as soon as the core itself changes. If for example, a new core version is released, the core team can quickly raise the dependency constraints for `typo3/cms-core` and `typo3/cms-extbase` which cannot be done when working with Sascha's package.
 
-Also, Sascha's package contains dynamic return type providers that are not needed (yet) to make the core more compatible with phpstan. On the contrary, this package contains a dynamic return type provider for the pseudo factory method `\TYPO3\CMS\Core\Context\Context::getAspect()` which is missing in Sascha's extension and which was needed while working on a lower level compatibility.
+Also, Sascha's package contains dynamic return type providers that are not needed (yet) to make the core more compatible with phpstan.
 
 To sum it all up: There is no competition between both extensions and this extension should not be used by users but only by the TYPO3 core.
