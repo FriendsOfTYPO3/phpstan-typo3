@@ -1,6 +1,40 @@
 # TYPO3 extension for PHPStan
 
-TYPO3 CMS class reflection extension for PHPStan &amp; framework-specific rules
+> [!NOTE]
+> `friendsoftypo3/phpstan-typo3` is obsolete and has been retired.
+> The package dependency should be removed from TYPO3 project or extension development: `composer rem --dev friendsoftypo3/phpstan-typo3`.
+> See below for transition options.
+
+## Migrating away from friendsoftypo3/phpstan-typo3 since TYPO3 core v12
+
+### Switch to saschaegerer/phpstan-typo3
+
+[Sascha's package saschaegerer/phpstan-typo3](https://packagist.org/packages/saschaegerer/phpstan-typo3) can be an
+alternative.
+
+### Remove package and rely on core annotations
+
+* The list of global TYPO3 specific constants shrunk over time and phpstan finds more of the remaining ones by default.
+  phpstan may mumble about constants `LF` and `CR` not being defined. They can be made known to phpstan like this in
+  a `phpstan.neon` config file:
+  ```
+    parameters:
+      bootstrapFiles:
+      - phpstan.bootstrap.php
+  ```
+  File `phpstan.bootstrap.php` then contains:
+  ```
+    <?php
+    define('LF', chr(10));
+    define('CR', chr(13));
+  ```
+* `GeneralUtility::makeInstance()`,  `Context->getAspect()`, `Query->execute()` and `QueryInterface->execute()`
+  have proper method annotations since TYPO3 v12, the phpstan extension classes are not needed anymore and
+  phpstan "understands" return values of these methods out of the box.
+* `ObjectManagerInterface->get()` and `ObjectManager->get()` extensions have been removed from TYPO3 since v12
+  and are thus obsolete.
+
+## TYPO3 CMS class reflection extension for PHPStan &amp; framework-specific rules
 
 This extension provides the following features:
 
