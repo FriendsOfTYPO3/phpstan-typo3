@@ -7,11 +7,6 @@
 
 ## Migrating away from friendsoftypo3/phpstan-typo3 since TYPO3 core v12
 
-### Switch to saschaegerer/phpstan-typo3
-
-[Sascha's package saschaegerer/phpstan-typo3](https://packagist.org/packages/saschaegerer/phpstan-typo3) can be an
-alternative.
-
 ### Remove package and rely on core annotations
 
 * The list of global TYPO3 specific constants shrunk over time and phpstan finds more of the remaining ones by default.
